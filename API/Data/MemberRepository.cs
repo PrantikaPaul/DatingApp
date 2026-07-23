@@ -20,7 +20,7 @@ namespace API.Data
         {
             return await context.Members
                             .Where(x => x.Id == memberId)
-                            .SelectMany(x=> x.Photos)
+                            .SelectMany(x => x.Photos)
                             .ToListAsync();
         }
 
