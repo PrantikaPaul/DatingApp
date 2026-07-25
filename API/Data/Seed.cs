@@ -9,7 +9,7 @@ namespace API.Data
 {
     public class Seed
     {
-        public static async Task Seedusers(AppDbContext context)
+        public static async Task SeedUsers(AppDbContext context)
         {
             if (await context.Users.AnyAsync()) return;
 

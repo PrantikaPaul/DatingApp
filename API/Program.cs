@@ -47,7 +47,7 @@ try
 {
     var context = services.GetRequiredService<AppDbContext>();
     await context.Database.MigrateAsync();
-    await Seed.Seedusers(context);
+    await Seed.SeedUsers(context);
 }
 catch (Exception ex)
 {
